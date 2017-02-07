@@ -444,7 +444,6 @@ class Reports:
 				WHERE el_from = page_id
 				AND page_namespace = 0
 				GROUP BY 2
-				HAVING COUNT(*) >= 100
 				ORDER BY COUNT(*) DESC
 				LIMIT 1000;"""
 		cur.execute(query)
