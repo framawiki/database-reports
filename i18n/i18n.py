@@ -323,7 +323,7 @@ lang_dicts = {
 		"most_watched-watchers": "Nombre",
 		"most_watched-id": "N.",
 
-		"most_used_external_links-page-title": "Liens externes les plus utilisés dans l'espace principal",
+		"most_used_external_links-page-title": "Liens externes les plus utilis%C3%A9ss dans l%27espace principal",
 		"most_used_external_links-desc": "Liens externes les plus utilisés dans l'espace principal par domaine (limited to the first 1000 entries)",
 		"most_used_external_links-count": "Nombre",
 		"most_used_external_links-id": "N.",
