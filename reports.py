@@ -1,4 +1,4 @@
-import mwclient
+import pywikibot
 import MySQLdb
 from i18n import i18n
 import datetime
@@ -467,9 +467,9 @@ class Reports:
 		dict_obj = i18n.lang_dicts[ str( self.wiki + 'dict') ]
 		reports_base_url = dict_obj[ str( 'reports_base_url' ) ]
 		report_title = dict_obj[ str( title ) ]
-		print(str( reports_base_url + report_title ))
-		page = self.site.Pages[ reports_base_url + report_title ]
-		page.save( content, summary = dict_obj[ 'summary' ] , minor=True)
+		pywikibot.output( reports_base_url + report_title )
+		page = pywikibot.Page(self.site, reports_base_url + report_title)
+		page.put( content, summary = dict_obj[ 'summary' ] , minor=True)
 
 
 	def linkify( self, title, namespace = None ):

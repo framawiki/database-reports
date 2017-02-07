@@ -1,4 +1,4 @@
-import mwclient
+import pywikibot
 import MySQLdb
 from displayTable import *
 from config import *
@@ -19,8 +19,7 @@ def main ( args ):
 class Run:
 	def __init__( self, wiki ):
 		self.db = MySQLdb.connect( host = wiki + 'wiki.labsdb', user = credentials['user'], passwd = credentials['pass'], db = wiki + 'wiki_p' )
-		self.site = mwclient.Site( wiki + '.wikipedia.org' )
-		self.site.login( cttbot['user'], cttbot['pass'] )
+		self.site = pywikibot.Site(wiki, 'wikipedia')
 		self.rep = Reports( self.site, self.db, wiki )
 
 	def forgotten_articles( self ):
