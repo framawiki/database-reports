@@ -452,7 +452,7 @@ class Reports:
 		content.append( ['most_used_external_links-id', 'most_used_external_links-count', 'most_used_external_links-domain'] )
 		i = 1
 		for row in cur.fetchall():
-			content.append( [ i, row[0], self.linkify( row[1], row[0] ), row[2] ])
+			content.append( [ i, row[0], row[1] ])
 			i += 1
 
 		# Format the data as wikitext
