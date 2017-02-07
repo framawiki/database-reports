@@ -8,7 +8,7 @@ import sys
 def main ( args ):
 	wiki = args[1]
 	for arg in args[2:]:
-		print arg
+		print(arg)
 		run = Run( wiki )
 		method = getattr( run, str( arg ) )
 		if not method:
@@ -67,6 +67,9 @@ class Run:
 
 	def most_watched(self):
 		self.rep.most_watched()
+
+	def most_used_external_links(self):
+		self.rep.most_used_external_links()
 
 if __name__ == '__main__':
 	main(sys.argv)
