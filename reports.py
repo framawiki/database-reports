@@ -434,6 +434,32 @@ class Reports:
 		text = display_report(self.wiki, content, 'most_watched-desc')
 		self.publish_report('most_watched-page-title', text)
 
+	def most_used_external_links( self ):
+		cur = self.db.cursor()
+		# query by Thibaut120094 under CC0 License : https://quarry.wmflabs.org/query/16060
+		query ="""SELECT
+				  COUNT(*),
+				  TRIM(LEADING 'www.' FROM SUBSTRING_INDEX(SUBSTRING_INDEX(el_to, '/', 3),'/',-1)) AS site
+				FROM externallinks, page
+				WHERE el_from = page_id
+				AND page_namespace = 0
+				GROUP BY 2
+				HAVING COUNT(*) >= 100
+				ORDER BY COUNT(*) DESC
+				LIMIT 1000;"""
+		cur.execute(query)
+		content = []
+		content.append( ['most_used_external_links-id', 'most_used_external_links-count', 'most_used_external_links-domain'] )
+		i = 1
+		for row in cur.fetchall():
+			content.append( [ i, row[0], self.linkify( row[1], row[0] ), row[2] ])
+			i += 1
+
+		# Format the data as wikitext
+		text = display_report(self.wiki, content, 'most_used_external_links-desc')
+		self.publish_report('most_used_external_links-page-title', text)
+
+
 	''' Publish report on page with given title, with the given content
 		@param title Page title
 		@param content Content to be displayed on page

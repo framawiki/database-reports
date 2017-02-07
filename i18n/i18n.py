@@ -95,7 +95,13 @@ lang_dicts = {
 		"most_watched-namespace": "Namespace",
 		"most_watched-title": "Title",
 		"most_watched-watchers": "Count",
-		"most_watched-id": "N%C2%B0"
+		"most_watched-id": "N%C2%B0",
+
+		"most_used_external_links-page-title": "Most used external links",
+		"most_used_external_links-desc": "Most used external links in main namespace by domain (limited to the first 1000 entries)",
+		"most_used_external_links-count": "Count",
+		"most_used_external_links-id": "N%C2%B0",
+		"most_used_external_links-domain": "Domain"
 	},
 
 	'esdict' : {
@@ -213,7 +219,13 @@ lang_dicts = {
 		"most_watched-namespace": "Namespace",
 		"most_watched-title": "Title",
 		"most_watched-watchers": "Count",
-		"most_watched-id": "N%C2%B0"
+		"most_watched-id": "N%C2%B0",
+
+		"most_used_external_links-page-title": "Most used external links",
+		"most_used_external_links-desc": "Most used external links in main namespace by domain (limited to the first 1000 entries)",
+		"most_used_external_links-count": "Count",
+		"most_used_external_links-id": "N%C2%B0",
+		"most_used_external_links-domain": "Domain"
 	},
 
 	'frdict' : {
@@ -309,7 +321,13 @@ lang_dicts = {
 		"most_watched-namespace": "[[Aide:Espace de noms|NS]]",
 		"most_watched-title": "Titre",
 		"most_watched-watchers": "Nombre",
-		"most_watched-id": "N."
+		"most_watched-id": "N.",
+
+		"most_used_external_links-page-title": "Liens externes les plus utilisés dans l'espace principal",
+		"most_used_external_links-desc": "Liens externes les plus utilisés dans l'espace principal par domaine (limited to the first 1000 entries)",
+		"most_used_external_links-count": "Nombre",
+		"most_used_external_links-id": "N.",
+		"most_used_external_links-domain": "Domaine"
 	}
 }
 
