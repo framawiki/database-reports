@@ -23,6 +23,9 @@ class Run:
 		self.site.login( cttbot['user'], cttbot['pass'] )
 		self.rep = Reports( self.site, self.db, wiki )
 
+	def most_linked_external ( self ):
+		self.rep.most_linked_external()
+
 	def forgotten_articles( self ):
 		self.rep.forgotten_articles()
 

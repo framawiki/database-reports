@@ -95,7 +95,13 @@ lang_dicts = {
 		"most_watched-namespace": "Namespace",
 		"most_watched-title": "Title",
 		"most_watched-watchers": "Count",
-		"most_watched-id": "N%C2%B0"
+		"most_watched-id": "N%C2%B0",
+
+		"most_linked_external-title": "",
+		"most_linked_external-desc": "",
+		"most_linked_external-count": "",
+		"most_linked_external-domain": "",
+		"most_linked_external-id": "",
 	},
 
 	'esdict' : {
@@ -213,7 +219,13 @@ lang_dicts = {
 		"most_watched-namespace": "Namespace",
 		"most_watched-title": "Title",
 		"most_watched-watchers": "Count",
-		"most_watched-id": "N%C2%B0"
+		"most_watched-id": "N%C2%B0",
+
+		"most_linked_external-title": "",
+		"most_linked_external-desc": "",
+		"most_linked_external-count": "",
+		"most_linked_external-domain": "",
+		"most_linked_external-id": "",
 	},
 
 	'frdict' : {
@@ -309,7 +321,13 @@ lang_dicts = {
 		"most_watched-namespace": "[[Aide:Espace de noms|NS]]",
 		"most_watched-title": "Titre",
 		"most_watched-watchers": "Nombre",
-		"most_watched-id": "N."
+		"most_watched-id": "N.",
+
+		"most_linked_external-title": "Liens externes les plus utilis&eacute;s dans l'espace principal‎",
+		"most_linked_external-desc": "Liste des sites externes à fr.wiki les plus liés depuis les articles (limitée aux sites ayant plus de 100 liens). Voir [[Special:LinkSearch]] pour connaître l'utilisation de ces liens.  Il est possible de trier une colonne en cliquant sur les deux flèches de son libellé.",
+		"most_linked_external-count": "Nombre",
+		"most_linked_external-domain": "Domaine",
+		"most_linked_external-id": "N.",
 	}
 }
 
