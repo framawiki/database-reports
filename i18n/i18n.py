@@ -323,7 +323,7 @@ lang_dicts = {
 		"most_watched-watchers": "Nombre",
 		"most_watched-id": "N.",
 
-		"most_linked_external-title": "Liens externes les plus utilis&eacute;s dans l%27espace principal‎",
+		"most_linked_external-title": "Sites internet les plus li&eacute;s‎",
 		"most_linked_external-desc": "Liste des sites externes à fr.wiki les plus liés depuis les articles (limitée aux sites ayant plus de 100 liens). Voir [[Special:LinkSearch]] pour connaître l'utilisation de ces liens.  Il est possible de trier une colonne en cliquant sur les deux flèches de son libellé.",
 		"most_linked_external-count": "Nombre",
 		"most_linked_external-domain": "Domaine",
